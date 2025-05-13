@@ -232,14 +232,18 @@ textarea {
 }
 
 .contact__form-group-nom {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5px;
     justify-content: center;
-    gap: 10px;
 }
 
 .contact__form-group-nom input {
-    width: 50%;
-    align-self: center;
+    grid-row: 1;
+}
+
+.contact__form-group-nom p{
+    font-size: 10px;
 }
 
 .contact__form-group-check {
